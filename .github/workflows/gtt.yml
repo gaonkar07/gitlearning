@@ -15,7 +15,3 @@ jobs:
             echo "${{GITHUB.TOKEN}}"
         - name: checkouts
           uses: actions/checkout@v3
-        - name: after List Files
-          run: |
-            pwd
-            ls

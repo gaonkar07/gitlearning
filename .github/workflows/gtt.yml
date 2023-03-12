@@ -1,0 +1,17 @@
+name: mulyiline code
+on: [push]
+
+jobs:
+    run-github-actions:
+      runs-on: ubuntu-latest
+      steps:
+        - name: List Files
+          run: |
+            pwd
+            ls
+        - name: checkouts
+          uses: actions/checkout@v1
+        - name: after List Files
+          run: |
+            pwd
+            ls
